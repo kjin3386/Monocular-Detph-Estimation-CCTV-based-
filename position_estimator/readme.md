@@ -11,6 +11,7 @@ Meta-Sejong AI Robotics Challenge Stage 1용 위치 추정 패키지입니다.
 # 워크스페이스에 패키지 복사
 cd ~/your_ws/src
 git clone <this_repo> position_estimator
+# 이때, yolo_msg를 받기위한 세팅이 되어있어야 함.
 
 # 의존성 설치
 cd ~/your_ws
@@ -35,6 +36,8 @@ ros2 run position_estimator position_estimator_node \
   -p model_path:=/path/to/your/model.pth \
   -p device:=cuda
 ```
+#### 사용할 때 camera_name:=demo_1, demo_2, doncheon_1 ...등 원하는 카메라 적용해서 실행
+#### 여러개의 카메라를 한번에 실행시켜야할 경우 여러개 실행.
 
 ## 토픽
 ### 입력 토픽
