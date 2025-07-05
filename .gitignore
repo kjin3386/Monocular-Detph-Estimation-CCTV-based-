@@ -1,0 +1,7 @@
+# 모델 파일들 (용량이 큰 파일)
+*.pth
+*.pt
+*.onnx
+*.weights
+models/
+checkpoints/

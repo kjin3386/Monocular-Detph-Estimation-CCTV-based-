@@ -1,0 +1,41 @@
+running egg_info
+creating build/position_estimator/position_estimator.egg-info
+writing build/position_estimator/position_estimator.egg-info/PKG-INFO
+writing dependency_links to build/position_estimator/position_estimator.egg-info/dependency_links.txt
+writing entry points to build/position_estimator/position_estimator.egg-info/entry_points.txt
+writing requirements to build/position_estimator/position_estimator.egg-info/requires.txt
+writing top-level names to build/position_estimator/position_estimator.egg-info/top_level.txt
+writing manifest file 'build/position_estimator/position_estimator.egg-info/SOURCES.txt'
+reading manifest file 'build/position_estimator/position_estimator.egg-info/SOURCES.txt'
+writing manifest file 'build/position_estimator/position_estimator.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/build
+creating /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/build/lib
+creating /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/build/lib/position_estimator
+copying position_estimator/ray_plane_estimator.py -> /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/build/lib/position_estimator
+copying position_estimator/convnext_model.py -> /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/build/lib/position_estimator
+copying position_estimator/__init__.py -> /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/build/lib/position_estimator
+copying position_estimator/position_estimator_node.py -> /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/build/lib/position_estimator
+running install
+running install_lib
+creating /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/lib/python3.10/site-packages/position_estimator
+copying /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/build/lib/position_estimator/ray_plane_estimator.py -> /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/lib/python3.10/site-packages/position_estimator
+copying /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/build/lib/position_estimator/convnext_model.py -> /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/lib/python3.10/site-packages/position_estimator
+copying /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/build/lib/position_estimator/__init__.py -> /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/lib/python3.10/site-packages/position_estimator
+copying /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/build/lib/position_estimator/position_estimator_node.py -> /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/lib/python3.10/site-packages/position_estimator
+byte-compiling /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/lib/python3.10/site-packages/position_estimator/ray_plane_estimator.py to ray_plane_estimator.cpython-310.pyc
+byte-compiling /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/lib/python3.10/site-packages/position_estimator/convnext_model.py to convnext_model.cpython-310.pyc
+byte-compiling /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/lib/python3.10/site-packages/position_estimator/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/lib/python3.10/site-packages/position_estimator/position_estimator_node.py to position_estimator_node.cpython-310.pyc
+running install_data
+creating /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/share/ament_index
+creating /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/share/ament_index/resource_index
+creating /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/share/ament_index/resource_index/packages
+copying resource/position_estimator -> /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/share/ament_index/resource_index/packages
+copying package.xml -> /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/share/position_estimator
+running install_egg_info
+Copying build/position_estimator/position_estimator.egg-info to /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/lib/python3.10/site-packages/position_estimator-1.0.0-py3.10.egg-info
+running install_scripts
+Installing position_estimator_node script to /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/bin
+writing list of installed files to '/home/eojin/ros2_ws/src/position_estimator/build/position_estimator/install.log'

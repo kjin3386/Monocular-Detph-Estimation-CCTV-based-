@@ -1,0 +1,12 @@
+source;share/position_estimator/hook/path.ps1
+source;share/position_estimator/hook/path.dsv
+source;share/position_estimator/hook/path.sh
+source;share/position_estimator/hook/pythonpath.ps1
+source;share/position_estimator/hook/pythonpath.dsv
+source;share/position_estimator/hook/pythonpath.sh
+source;share/position_estimator/hook/pythonscriptspath.ps1
+source;share/position_estimator/hook/pythonscriptspath.dsv
+source;share/position_estimator/hook/pythonscriptspath.sh
+source;share/position_estimator/hook/ament_prefix_path.ps1
+source;share/position_estimator/hook/ament_prefix_path.dsv
+source;share/position_estimator/hook/ament_prefix_path.sh

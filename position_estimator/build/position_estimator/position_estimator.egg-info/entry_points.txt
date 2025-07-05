@@ -1,0 +1,3 @@
+[console_scripts]
+position_estimator_node = position_estimator.position_estimator_node:main
+

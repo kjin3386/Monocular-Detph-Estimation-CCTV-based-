@@ -1,0 +1,43 @@
+[0.492s] Invoking command in '/home/eojin/ros2_ws/src/position_estimator': PYTHONPATH=/home/eojin/ros2_ws/src/position_estimator/build/position_estimator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eojin/ros2_ws/src/position_estimator/install/position_estimator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/position_estimator build --build-base /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/build install --record /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/install.log --single-version-externally-managed install_data
+[0.679s] running egg_info
+[0.680s] creating build/position_estimator/position_estimator.egg-info
+[0.680s] writing build/position_estimator/position_estimator.egg-info/PKG-INFO
+[0.680s] writing dependency_links to build/position_estimator/position_estimator.egg-info/dependency_links.txt
+[0.680s] writing entry points to build/position_estimator/position_estimator.egg-info/entry_points.txt
+[0.680s] writing requirements to build/position_estimator/position_estimator.egg-info/requires.txt
+[0.680s] writing top-level names to build/position_estimator/position_estimator.egg-info/top_level.txt
+[0.680s] writing manifest file 'build/position_estimator/position_estimator.egg-info/SOURCES.txt'
+[0.681s] reading manifest file 'build/position_estimator/position_estimator.egg-info/SOURCES.txt'
+[0.682s] writing manifest file 'build/position_estimator/position_estimator.egg-info/SOURCES.txt'
+[0.682s] running build
+[0.682s] running build_py
+[0.682s] creating /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/build
+[0.682s] creating /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/build/lib
+[0.682s] creating /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/build/lib/position_estimator
+[0.682s] copying position_estimator/ray_plane_estimator.py -> /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/build/lib/position_estimator
+[0.682s] copying position_estimator/convnext_model.py -> /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/build/lib/position_estimator
+[0.682s] copying position_estimator/__init__.py -> /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/build/lib/position_estimator
+[0.682s] copying position_estimator/position_estimator_node.py -> /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/build/lib/position_estimator
+[0.683s] running install
+[0.683s] running install_lib
+[0.683s] creating /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/lib/python3.10/site-packages/position_estimator
+[0.684s] copying /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/build/lib/position_estimator/ray_plane_estimator.py -> /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/lib/python3.10/site-packages/position_estimator
+[0.684s] copying /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/build/lib/position_estimator/convnext_model.py -> /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/lib/python3.10/site-packages/position_estimator
+[0.684s] copying /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/build/lib/position_estimator/__init__.py -> /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/lib/python3.10/site-packages/position_estimator
+[0.684s] copying /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/build/lib/position_estimator/position_estimator_node.py -> /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/lib/python3.10/site-packages/position_estimator
+[0.684s] byte-compiling /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/lib/python3.10/site-packages/position_estimator/ray_plane_estimator.py to ray_plane_estimator.cpython-310.pyc
+[0.685s] byte-compiling /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/lib/python3.10/site-packages/position_estimator/convnext_model.py to convnext_model.cpython-310.pyc
+[0.685s] byte-compiling /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/lib/python3.10/site-packages/position_estimator/__init__.py to __init__.cpython-310.pyc
+[0.686s] byte-compiling /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/lib/python3.10/site-packages/position_estimator/position_estimator_node.py to position_estimator_node.cpython-310.pyc
+[0.686s] running install_data
+[0.687s] creating /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/share/ament_index
+[0.687s] creating /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/share/ament_index/resource_index
+[0.687s] creating /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/share/ament_index/resource_index/packages
+[0.687s] copying resource/position_estimator -> /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/share/ament_index/resource_index/packages
+[0.687s] copying package.xml -> /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/share/position_estimator
+[0.687s] running install_egg_info
+[0.688s] Copying build/position_estimator/position_estimator.egg-info to /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/lib/python3.10/site-packages/position_estimator-1.0.0-py3.10.egg-info
+[0.689s] running install_scripts
+[0.704s] Installing position_estimator_node script to /home/eojin/ros2_ws/src/position_estimator/install/position_estimator/bin
+[0.704s] writing list of installed files to '/home/eojin/ros2_ws/src/position_estimator/build/position_estimator/install.log'
+[0.720s] Invoked command in '/home/eojin/ros2_ws/src/position_estimator' returned '0': PYTHONPATH=/home/eojin/ros2_ws/src/position_estimator/build/position_estimator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eojin/ros2_ws/src/position_estimator/install/position_estimator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/position_estimator build --build-base /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/build install --record /home/eojin/ros2_ws/src/position_estimator/build/position_estimator/install.log --single-version-externally-managed install_data
