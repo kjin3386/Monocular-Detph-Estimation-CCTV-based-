@@ -4,6 +4,8 @@
 
 ## Overview
 This package provides a complete monocular depth and position estimation solution designed for the 2025 IEEE-METACOM Meta-Sejong AI Robotics Challenge. The system combines geometric ray-plane calculations with deep learning-based ConvNeXt models to accurately estimate 3D positions of trash objects from CCTV camera feeds for autonomous robotic collection.
+
+
 For the complete simulation environment including Isaac Sim setup, please refer to the main competition repository: https://github.com/junsuk123/metasejong-airobotics. This repository contains the position estimation module specifically designed for Stage 1 of the competition.
 
 <img width="1798" height="1005" alt="Image" src="https://github.com/user-attachments/assets/c95855d7-2830-4e78-a1c0-d210d6ee57cb" />
