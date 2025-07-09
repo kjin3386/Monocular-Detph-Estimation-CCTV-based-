@@ -223,21 +223,4 @@ This work was developed as part of academic research for the IEEE-METACOM 2025 c
 
 
 
-## Acknowledgments
-
-- **Meta-Sejong AI Robotics Challenge** organizers
-- **IEEE-METACOM 2025** conference
-- Open-source computer vision community
-- ROS2 development team
-
-## Contact
-
-For questions about this implementation or the competition:
-
-- **Repository**: [https://github.com/kjin3386/Monocular_Detph_Estimation_ROS_PACKAGE](https://github.com/kjin3386/Monocular_Detph_Estimation_ROS_PACKAGE)
-- **Training Notebook**: [https://www.kaggle.com/code/kjin3386/position-estimation-via-multi-modal-convnext](https://www.kaggle.com/code/kjin3386/position-estimation-via-multi-modal-convnext)
-- **Issues**: Please use GitHub Issues for bug reports and feature requests
-
----
-
 **Note**: This package was specifically developed for the 2025 IEEE-METACOM Meta-Sejong AI Robotics Challenge and is optimized for the Isaac Sim competition environment.
