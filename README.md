@@ -3,7 +3,8 @@
 **A comprehensive position estimation system for the 2025 IEEE-METACOM Meta-Sejong AI Robotics Challenge**
 
 ## Overview
-https://github.com/user-attachments/assets/b376f776-ceee-4226-8a2c-ff57b7c6c6f1
+<img width="856" height="268" alt="Image" src="https://github.com/user-attachments/assets/b376f776-ceee-4226-8a2c-ff57b7c6c6f1" />
+
 This package provides a complete monocular depth and position estimation solution designed for the **2025 IEEE-METACOM Meta-Sejong AI Robotics Challenge**. The system combines geometric ray-plane calculations with deep learning-based ConvNeXt models to accurately estimate 3D positions of trash objects from CCTV camera feeds for autonomous robotic collection.
 
 ### Key Features
