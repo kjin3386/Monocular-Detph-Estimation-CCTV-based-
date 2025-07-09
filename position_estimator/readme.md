@@ -1,91 +1,108 @@
 # Position Estimator Package
-Meta-Sejong AI Robotics Challenge Stage 1용 위치 추정 패키지입니다.
 
-## 기능
-- **Ray-Plane 기하학적 계산**: YOLO detection 결과를 3D 월드 좌표로 변환
-- **ConvNeXt 모델 추론**: 쓰레기 분류 및 위치 정제
-- **ROS2 통합**: 실시간 토픽 처리
+Position estimation package for Meta-Sejong AI Robotics Challenge Stage 1.
 
-## 설치
+## Features
+
+- **Ray-Plane Geometric Calculation**: Convert YOLO detection results to 3D world coordinates
+- **ConvNeXt Model Inference**: Trash classification and position refinement
+- **ROS2 Integration**: Real-time topic processing
+
+## Installation
+
 ```bash
-# 워크스페이스에 패키지 복사
+# Load Model
+https://www.kaggle.com/code/kjin3386/position-estimation-via-multi-modal-convnext
+The above link is part of the META-SEJONG CHALLENGE (2025 IEEE Metacom), 
+which is the Kaggle notebook used for training.
+You can train, test, and extract models using the code and dataset inside.
+
+# Copy package to workspace
 cd ~/your_ws/src
 git clone <this_repo> position_estimator
-# 이때, yolo_msg를 받기위한 세팅이 되어있어야 함.
+# Note: Setup for receiving yolo_msg should be configured
 
-# 의존성 설치
+# Install dependencies
 cd ~/your_ws
 rosdep install --from-paths src --ignore-src -r -y
 
-# 빌드
+# Build
 colcon build --packages-select position_estimator
 source install/setup.bash
 ```
 
-## 사용법
-### 1. 기본 실행 (모델 없이)
+## Usage
+
+### 1. Basic Execution (without model)
 ```bash
 ros2 run position_estimator position_estimator_node \
   --ros-args -p camera_name:=demo_1
 ```
 
-### 2. 모델과 함께 실행
+### 2. Execution with Model
 ```bash
 ros2 run position_estimator position_estimator_node \
   --ros-args -p camera_name:=demo_1 \
   -p model_path:=/path/to/your/model.pth \
   -p device:=cuda
 ```
-#### 사용할 때 camera_name:=demo_1, demo_2, doncheon_1 ...등 원하는 카메라 적용해서 실행
-#### 여러개의 카메라를 한번에 실행시켜야할 경우 여러개 실행.
 
-## 토픽
-### 입력 토픽
-- `/metasejong2025/cameras/{camera_name}/image_raw`: 카메라 이미지
-- `/metasejong2025/cameras/{camera_name}/camera_info`: 카메라 파라미터
-- `/yolo/{camera_name}/detections`: YOLO detection 결과 (DetectionArray)
+#### When using, apply desired camera with camera_name:=demo_1, demo_2, doncheon_1, etc.
+#### For multiple cameras simultaneously, run multiple instances.
 
-### 출력 토픽
-- `/position_estimator/{camera_name}/trash_positions`: 3D 위치 (PointStamped)
-- `/position_estimator/{camera_name}/results`: 전체 결과 (JSON String)
+## Topics
 
-## 지원 카메라
-다음 카메라들이 미리 설정되어 있습니다:
+### Input Topics
+- `/metasejong2025/cameras/{camera_name}/image_raw`: Camera image
+- `/metasejong2025/cameras/{camera_name}/camera_info`: Camera parameters
+- `/yolo/{camera_name}/detections`: YOLO detection results (DetectionArray)
+
+### Output Topics
+- `/position_estimator/{camera_name}/trash_positions`: 3D positions (PointStamped)
+- `/position_estimator/{camera_name}/results`: Complete results (JSON String)
+
+## Supported Cameras
+
+The following cameras are pre-configured:
 - `demo_1`, `demo_2`
 - `dongcheon_1`, `dongcheon_2`
 - `gwanggaeto_1`, `gwanggaeto_2`
 - `jiphyeon_1`, `jiphyeon_2`
 
-## 패키지 구조
+## Package Structure
+
 ```
 position_estimator/
 ├── package.xml
 ├── setup.py
 ├── position_estimator/
 │   ├── __init__.py
-│   ├── position_estimator_node.py    # 메인 ROS2 노드
-│   ├── ray_plane_estimator.py        # 기하학적 계산
-│   └── convnext_model.py             # ConvNeXt 모델
+│   ├── position_estimator_node.py    # Main ROS2 node
+│   ├── ray_plane_estimator.py        # Geometric calculation
+│   └── convnext_model.py             # ConvNeXt model
 └── README.md
 ```
 
-## 의존성
+## Dependencies
+
 - rclpy
 - geometry_msgs
 - sensor_msgs
 - std_msgs
 - yolo_msgs
 - cv_bridge
-- torch (모델 사용시)
-- torchvision (모델 사용시)
+- torch (when using model)
+- torchvision (when using model)
 - opencv-python
 - numpy
 
-## 모델 파일
-학습된 ConvNeXt 모델(.pth 파일)을 준비하고 `model_path` 파라미터로 경로를 지정하세요.
-모델 없이도 기하학적 계산만으로 동작 가능합니다.
+## Model File
 
-## 결과 포맷 (수정된 간단한 버전)
+Prepare a trained ConvNeXt model (.pth file) and specify the path with the `model_path` parameter.
+The system can operate with geometric calculations alone without a model.
+
+## Result Format (Simplified Version)
+
 ```json
 {
   "class_name": "cracker_box",
@@ -94,8 +111,9 @@ position_estimator/
 }
 ```
 
-## 파라미터
-- `camera_name`: 사용할 카메라명 (기본값: demo_1)
-- `model_path`: ConvNeXt 모델 경로 (선택사항)
-- `device`: 추론 장치 (cpu/cuda, 기본값: cpu)
-- `confidence_threshold`: 신뢰도 임계값 (기본값: 0.5)
+## Parameters
+
+- `camera_name`: Camera name to use (default: demo_1)
+- `model_path`: ConvNeXt model path (optional)
+- `device`: Inference device (cpu/cuda, default: cpu)
+- `confidence_threshold`: Confidence threshold (default: 0.5)
