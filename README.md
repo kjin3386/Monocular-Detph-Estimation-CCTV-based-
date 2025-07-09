@@ -32,10 +32,16 @@ The challenge runs in Isaac Sim environment with multiple CCTV cameras providing
 
 ## System Architecture
 <img width="856" height="268" alt="Image" src="https://github.com/user-attachments/assets/b376f776-ceee-4226-8a2c-ff57b7c6c6f1" />
+
+
 #### overall system architecture
 
 <img width="593" height="613" alt="Image" src="https://github.com/user-attachments/assets/d539e44f-fe5e-4633-bf5f-c08f78f79b8e" />
+
+
 #### visual-geometric network flowchart
+
+
 ## Technical Approach
 
 ### 1. Geometric Position Estimation
