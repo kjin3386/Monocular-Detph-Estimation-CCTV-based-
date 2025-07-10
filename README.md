@@ -197,21 +197,6 @@ position_estimator/
     └── multi_camera.launch.py      # Multi-camera launch
 ```
 
-## Performance
-
-### Accuracy Metrics (Test Results)
-
-- **Average Initial Error**: 2.847m
-- **Average Model Error**: 2.103m  
-- **Mean Improvement**: 0.744m (26.1% reduction)
-- **Success Rate**: 75.0% of cases improved
-
-### Real-time Performance
-
-- **Geometric Calculation**: <10ms per detection
-- **Model Inference**: ~50ms per detection (GPU)
-- **Total Pipeline**: <100ms end-to-end
-
 ## Research & Development
 
 This work was developed as part of academic research for the IEEE-METACOM 2025 conference. Key contributions include:
